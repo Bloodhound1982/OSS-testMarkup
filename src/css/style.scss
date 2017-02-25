@@ -1,24 +1,102 @@
 @import "normalize";
+@import "fonts.scss";
 
 //---------------- General styles parts start -----------------
-
-body {
+html {
   font-family: Rockwell;
   font-size: 16px;
   color: #343433;
-  background: #ada6a0; /* Old browsers */
-  background: radial-gradient(ellipse at top, #f8f8f7 0%,#ada6a0 40%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+body {
+  background: #ada6a0;
+  background: radial-gradient(ellipse at top, #f8f8f7 0%, #ada6a0 40%) no-repeat;
+  background-attachment: local;
   background-size: contain;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 //---------------- General styles parts end -----------------
 //----------------  Header start -----------------
 .logo {
   display: block;
-  margin: 2.75rem auto 0;
+  margin: 2.75rem auto 15px;
 }
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
+  margin: 5px 50px 15px;
+  background: #fff;
+  box-shadow: 0 0 5px #000;
+
+  .header_navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+
+    .header_navbar_item {
+      padding: 20px 30px;
+      &:first-child {
+        padding-left: 0;
+      }
+      a {
+        text-decoration: none;
+        font-family: 'Rockwell', sans-serif !important;
+        color: #5b5b5b;
+        font-size: 18px;
+        font-weight: 400;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+  .header_navbar_search {
+    position: relative;
+    .input_search {
+      width: 263px;
+      border: 1px solid rgba(205, 205, 205, 0.38);
+      background-color: #fafafa;
+      margin-right: 12px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 17px;
+      font-family: Rockwell;
+      font-size: 18px;
+      font-style: italic;
+      color: #5b5b5b;
+      &::-webkit-input-placeholder       {opacity: 0.5; transition: opacity 0.3s ease;}
+      &::-moz-placeholder                {opacity: 0.5; transition: opacity 0.3s ease;}
+      &:-moz-placeholder                 {opacity: 0.5; transition: opacity 0.3s ease;}
+      &:-ms-input-placeholder            {opacity: 0.5; transition: opacity 0.3s ease;}
+      &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+      &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+      &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+      &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+      &:focus {outline: none;}
+    }
+    .btn_search {
+      position: absolute;
+      width: 29px;
+      height: 23px;
+      border: none;
+      outline: none;
+      background: url('../img/icon_mignifier.png') no-repeat;
+      opacity: .5;
+      top: 7px;
+      left: 245px;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
 }
 //----------------  Header end -----------------
