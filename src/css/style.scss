@@ -1,0 +1,24 @@
+@import "normalize";
+
+//---------------- General styles parts start -----------------
+
+body {
+  font-family: Rockwell;
+  font-size: 16px;
+  color: #343433;
+  background: #ada6a0; /* Old browsers */
+  background: radial-gradient(ellipse at top, #f8f8f7 0%,#ada6a0 40%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+}
+//---------------- General styles parts end -----------------
+//----------------  Header start -----------------
+.logo {
+  display: block;
+  margin: 2.75rem auto 0;
+}
+.header {
+
+}
+//----------------  Header end -----------------
