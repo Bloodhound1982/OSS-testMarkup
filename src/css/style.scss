@@ -29,7 +29,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
   margin: 5px 50px 15px;
   background: #fff;
   box-shadow: 0 0 5px #000;
@@ -80,7 +79,7 @@ ul {
       &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
       &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
       &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
-      &:focus {outline: none;}
+      &:focus {outline: none; border-color: #fff;}
     }
     .btn_search {
       position: absolute;
@@ -100,3 +99,28 @@ ul {
   }
 }
 //----------------  Header end -----------------
+//----------------  Carousel start -----------------
+.carousel {
+  margin: 0 50px 15px;
+  background: #fafafa;
+  padding: 15px 12px;
+  box-shadow: 0 0 5px #000;
+  .carousel_slick {
+    .carousel_item_1 {
+      height: 347px;
+      background: url('../img/slide_1.jpg') no-repeat;
+      background-size: cover;
+    }
+    .carousel_item_2 {
+      height: 347px;
+      background: url('../img/slide_2.jpg') no-repeat;
+      background-size: cover;
+    }
+    .carousel_item_3 {
+      height: 347px;
+      background: url('../img/slide_3.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+//----------------  Carousel end -----------------
