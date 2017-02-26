@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Rockwell';
+  src: url("../fonts/ROCK.eot");
+  src: url("../fonts/ROCK.eot") format("embedded-opentype"), url("../fonts/ROCK.woff2") format("woff2"), url("../fonts/ROCK.woff") format("woff"), url("../fonts/ROCK.ttf") format("truetype"), url("../fonts/ROCK.svg#ROCK") format("svg"); }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnRzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx3QkFBd0I7RUFDeEIsOEJBQVE7RUFDUiwwT0FJb0MsRUFBQSIsImZpbGUiOiJmb250cy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdSb2Nrd2VsbCc7XG4gIHNyYzogdXJsKCcuLi9mb250cy9ST0NLLmVvdCcpO1xuICBzcmM6IHVybCgnLi4vZm9udHMvUk9DSy5lb3QnKSBmb3JtYXQoJ2VtYmVkZGVkLW9wZW50eXBlJyksXG4gIHVybCgnLi4vZm9udHMvUk9DSy53b2ZmMicpIGZvcm1hdCgnd29mZjInKSxcbiAgdXJsKCcuLi9mb250cy9ST0NLLndvZmYnKSBmb3JtYXQoJ3dvZmYnKSxcbiAgdXJsKCcuLi9mb250cy9ST0NLLnR0ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKSxcbiAgdXJsKCcuLi9mb250cy9ST0NLLnN2ZyNST0NLJykgZm9ybWF0KCdzdmcnKTtcbn0iXX0= */

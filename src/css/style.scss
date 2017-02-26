@@ -124,3 +124,120 @@ ul {
   }
 }
 //----------------  Carousel end -----------------
+//----------------  Panels start -----------------
+.panels {
+  margin: 0px 50px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 12px;
+  .panels_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 12px;
+    background: #fafafa;
+    margin-right: 15px;
+    box-shadow: 0 0 5px #000;
+    &:last-child {
+      margin-right: 0;
+    }
+    .panels_item_photo {
+      background-size: cover;
+    }
+    .panels_item_text {
+      height: 118px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: justify;
+    }
+    .panels_item_more {
+      align-self: flex-end;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+//----------------  Panels end -----------------
+//----------------  Welcome start -----------------
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px 15px;
+  padding: 11px;
+  background: #fff;
+  box-shadow: 0 0 5px #000;
+  .welcome_image-mosaic {
+    margin-right: 15px;
+    .first_row {
+      display: flex;
+      justify-content: space-between;
+      .mosaic_item {
+        margin: 4px;
+        width: 105px;
+        height: 80px;
+      }
+    }
+    .second_row {
+      display: flex;
+      justify-content: space-between;
+      .mosaic_item {
+        margin: 4px;
+        width: 105px;
+        height: 80px;
+      }
+    }
+  }
+
+  .welcome_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h3 {
+      margin-top: 0;
+    }
+    p {
+      font-size: 12px;
+      height: 90px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: justify;
+    }
+    .welcome_items_more {
+      align-self: flex-end;
+      font-size: 12px;
+    }
+  }
+}
+//----------------  Welcome end -----------------
+//----------------  Footer star -----------------
+.footer {
+  margin: 0px 50px 50px;
+  background: #fff;
+  box-shadow: 0 0 5px #000;
+  font-family: Calibri;
+  font-size: 14px;
+  color: #545454;
+  padding: 22px;
+
+  .terms {
+    margin-right: 20px;
+  }
+  .privacy {
+    margin-right: 20px;
+  }
+  .copyright {
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+//----------------  Footer end -----------------
