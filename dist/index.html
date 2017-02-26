@@ -35,26 +35,26 @@
     <section class="panels">
         <div class="panels_item">
             <img src="img/panels/1.jpg" alt="" class="panels_item_photo">
-            <p class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet atque delectus deleniti eaque placeat quae qui? Aspernatur deleniti dolorem doloremque incidunt, itaque nemo qui quidem recusandae sapiente temporibus? Debitis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam amet atque aut blanditiis debitis distinctio dolores eum facere impedit magnam nisi nobis quaerat rem repellat repellendus, sunt voluptas.</p>
+            <div class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet atque delectus deleniti eaque placeat quae qui? Aspernatur deleniti dolorem doloremque incidunt, itaque nemo qui quidem recusandae sapiente temporibus? Debitis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam amet atque aut blanditiis debitis distinctio dolores eum facere impedit magnam nisi nobis quaerat rem repellat repellendus, sunt voluptas.</div>
             <a href="#" class="panels_item_more">more...</a>
         </div>
         <div class="panels_item">
             <img src="img/panels/2.jpg" alt="" class="panels_item_photo">
-            <p class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at, consequatur cupiditate fugiat ipsa modi molestias odio omnis quas quis quod repellat suscipit, vitae. Excepturi facere necessitatibus non sit veniam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea error facilis incidunt ipsam ipsum minima molestiae nam natus non odio, officiis quas qui quidem sequi, tempora temporibus ut veniam.</p>
+            <div class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at, consequatur cupiditate fugiat ipsa modi molestias odio omnis quas quis quod repellat suscipit, vitae. Excepturi facere necessitatibus non sit veniam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea error facilis incidunt ipsam ipsum minima molestiae nam natus non odio, officiis quas qui quidem sequi, tempora temporibus ut veniam.</div>
             <a href="#" class="panels_item_more">more...</a>
         </div>
         <div class="panels_item">
             <img src="img/panels/3.jpg" alt="" class="panels_item_photo">
-            <p class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis distinctio dolore dolores doloribus eaque error iure, laborum natus numquam repellat, sapiente! Aperiam eveniet iste quod sint tenetur vel voluptatibus?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam deleniti deserunt dolorum eveniet, ex fuga ipsa laudantium molestias nisi numquam odio, quaerat quis quo rem, sapiente ullam unde velit.</p>
+            <div class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis distinctio dolore dolores doloribus eaque error iure, laborum natus numquam repellat, sapiente! Aperiam eveniet iste quod sint tenetur vel voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam deleniti deserunt dolorum eveniet, ex fuga ipsa laudantium molestias nisi numquam odio, quaerat quis quo rem, sapiente ullam unde velit.</div>
             <a href="#" class="panels_item_more">more...</a>
         </div>
         <div class="panels_item">
             <img src="img/panels/4.jpg" alt="" class="panels_item_photo">
-            <p class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloremque doloribus fuga numquam omnis sequi similique vero? Accusantium commodi corporis distinctio esse et magnam, nobis omnis porro quidem repellat, velit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deserunt quo quod repellendus veniam voluptates. Aliquam aperiam aspernatur, commodi, delectus dolorem ea expedita fuga fugit maxime officia placeat similique, voluptas?</p>
+            <div class="panels_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloremque doloribus fuga numquam omnis sequi similique vero? Accusantium commodi corporis distinctio esse et magnam, nobis omnis porro quidem repellat, velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deserunt quo quod repellendus veniam voluptates. Aliquam aperiam aspernatur, commodi, delectus dolorem ea expedita fuga fugit maxime officia placeat similique, voluptas?</div>
             <a href="#" class="panels_item_more">more...</a>
         </div>
     </section>
@@ -87,14 +87,22 @@
         <span class="privacy">Privacy Policy</span>
         <span class="copyright">© 2017  Alex (<a href="https://github.com/Bloodhound1982" target="_blank">GitHub</a>)</span>
     </footer>
-
-
-
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="js/slick_settings.js"></script>
+    <script>
+        $('.carousel_slick').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    </script>
 </body>
 </html>

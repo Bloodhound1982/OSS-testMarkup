@@ -1,0 +1,120 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .header {
+    padding: 0 20px 10px;
+    margin: 5px 0 15px;
+    .header_navbar {
+      justify-content: center;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      padding-left: 0;
+      .header_navbar_item {
+        padding: 10px 15px;
+        &:nth-child(3) {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    .header_navbar_search {
+      margin-left: 0;
+      .input_search {
+        width: 260px;
+      }
+      .btn_search {
+        left: 245px;
+      }
+    }
+  }
+  .carousel {
+    margin: 0px 0px 15px;
+  }
+  .panels {
+    margin: 0px 0px 15px;
+    .panels_item {
+      flex-grow: 1;
+      margin-top: 10px;
+      margin-right: 0;
+    }
+  }
+  .welcome {
+    margin: 0px 0px 15px;
+    flex-wrap: wrap;
+    .welcome_image-mosaic {
+      flex-grow: 1;
+      margin-right: 0;
+      .first_row {
+        justify-content:center;
+      }
+      .second_row {
+        justify-content:center;
+      }
+    }
+    .welcome_text {
+      h3 {
+        margin: 5px auto;
+      }
+    }
+  }
+  .footer {
+    margin: 0px 0px 15px;
+  }
+}
+@media only screen
+and (min-device-width : 481px)
+and (max-device-width : 768px) {
+  .header {
+    padding: 0 20px 10px;
+    .header_navbar {
+      justify-content: space-between;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      padding-left: 0;
+      .header_navbar_item {
+        padding: 15px 20px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .panels {
+    justify-content: space-between;
+    align-content: space-between;
+    .panels_item {
+      flex-grow: 1;
+      margin-top: 10px;
+      margin-right: 0;
+      flex-basis: 240px;
+    }
+  }
+}
+@media only screen
+and (min-width : 769px)
+and (max-width: 1223px) {
+  .header {
+    padding: 0 20px 10px;
+    align-content: space-around;
+    .header_navbar {
+      justify-content: space-between;
+      padding-left: 0;
+      flex-grow: 1;
+      .header_navbar_item {
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .panels {
+    align-content: space-around;
+    .panels_item {
+      margin-top: 10px;
+      margin-right: 0;
+      flex-basis: 280px;
+    }
+  }
+}
